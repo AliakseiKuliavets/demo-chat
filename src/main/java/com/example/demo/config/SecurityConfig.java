@@ -20,6 +20,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authorizationRequests ->
                         authorizationRequests
                                 .requestMatchers("/login").permitAll()
+                                .requestMatchers("/login/create").permitAll()
                                 .anyRequest().authenticated()
                 )
                 .formLogin(withDefaults())
