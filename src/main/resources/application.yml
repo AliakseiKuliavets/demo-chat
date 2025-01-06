@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://kulevetsav:root123@cluster0.hiw9m.mongodb.net/myDatabase?retryWrites=true&w=majority
+  mongo:
+    database: myDatabase
+  jackson:
+    serialization:
+      indent_output: true
+  main:
+    web-application-type: servlet
+  jpa:
+    enabled: false
